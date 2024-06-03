@@ -1,0 +1,30 @@
+{
+  "name": "@flancer64/autobalta_cleaner",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "The CLI app to clean up expired data in the OpenCart-based shop.",
+  "homepage": "https://github.com/flancer64/autobalta_cleaner/",
+  "bugs": {
+    "url": "https://github.com/flancer64/autobalta_cleaner/issues",
+    "email": "alex@flancer64.com"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Alex Gusev",
+    "email": "alex@flancer64.com",
+    "url": "https://github.com/flancer64"
+  },
+  "repository": "github:flancer64/autobalta_cleaner",
+  "scripts": {
+    "help": "node ./bin/tequila.mjs -h",
+    "start": "node ./bin/tequila.mjs web-server-start",
+    "version": "node ./bin/tequila.mjs core-version"
+  },
+  "dependencies": {
+    "@teqfw/core": "github:teqfw/core",
+    "@teqfw/db": "github:teqfw/db",
+    "@teqfw/di": "github:teqfw/di",
+    "mysqli": "^3.1.4"
+  },
+  "devDependencies": {}
+}

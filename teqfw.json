@@ -1,0 +1,13 @@
+{
+  "@teqfw/di": {
+    "autoload": {
+      "ns": "Ab_Clean",
+      "path": "./src"
+    }
+  },
+  "@teqfw/core": {
+    "commands": [
+      "Ab_Clean_Back_Cli_Clean"
+    ]
+  }
+}
