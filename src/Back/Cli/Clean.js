@@ -6,12 +6,6 @@
 const NS = 'Ab_Clean_Back_Cli_Clean';
 
 // DEFINE MODULE'S FUNCTIONS
-function subtractDays(days, date) {
-    const res = (date instanceof Date) ? new Date(date) : new Date();
-    res.setDate(res.getDate() - Math.abs(days));
-    return res;
-}
-
 /**
  * Factory to create CLI command.
  *
@@ -73,7 +67,6 @@ export default function Factory(
             };
             const rows = await crud.deleteSet(trx, rdbLatakkoApiLog, where);
             logger.info(`Total '${rows}' log records were deleted.`);
-            debugger
             return rows;
         }
 
@@ -91,7 +84,6 @@ export default function Factory(
             };
             const rows = await crud.deleteSet(trx, rdbLatakkoApiQueue, where);
             logger.info(`Total '${rows}' queue records were deleted.`);
-            debugger
             return rows;
         }
 
@@ -108,7 +100,6 @@ export default function Factory(
             };
             const rows = await crud.deleteSet(trx, rdbLatakkoLog, where);
             logger.info(`Total '${rows}' log records were deleted.`);
-            debugger
             return rows;
         }
 
@@ -125,7 +116,6 @@ export default function Factory(
             };
             const rows = await crud.deleteSet(trx, rdbSession, where);
             logger.info(`Total '${rows}' sessions were deleted.`);
-            debugger
             return rows;
         }
 

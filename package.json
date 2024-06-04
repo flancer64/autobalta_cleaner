@@ -16,15 +16,12 @@
   },
   "repository": "github:flancer64/autobalta_cleaner",
   "scripts": {
-    "help": "node ./bin/tequila.mjs -h",
-    "start": "node ./bin/tequila.mjs web-server-start",
-    "version": "node ./bin/tequila.mjs core-version"
+    "start": "node ./bin/tequila.mjs app-clean"
   },
   "dependencies": {
-    "@teqfw/core": "github:teqfw/core",
-    "@teqfw/db": "github:teqfw/db",
-    "@teqfw/di": "github:teqfw/di",
-    "mysqli": "^3.1.4"
-  },
-  "devDependencies": {}
+    "@teqfw/core": "0.24.0",
+    "@teqfw/db": "0.21.0",
+    "@teqfw/di": "0.22.0",
+    "mysql": "^2.18.1"
+  }
 }
